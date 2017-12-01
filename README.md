@@ -1,4 +1,4 @@
-# vue-gtag
+# vue-gtagjs
 
 Google gtag.js for Vue.js
 
@@ -9,7 +9,7 @@ Install
 Usage
 ====
 
-```
+```js
 import gtagjs from 'vue-gtagjs'
 import VueRouter from 'vue-router'
 
