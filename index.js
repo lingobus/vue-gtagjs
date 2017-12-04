@@ -55,7 +55,7 @@ export default function (router, GA_TRACKING_ID, opts = {}) {
   } else {
     router.afterEach(to => {
       configPagePath(to.fullPath, GA_TRACKING_ID, opts)
-      if (opts.debug) log(url)
+      if (opts.debug) log(to.fullPath)
     })
   }
 }
