@@ -26,8 +26,9 @@ function initialize (trackId, opts) {
   const gtag = w.gtag = w.gtag || function () {
     w.dataLayer.push(arguments)
   }
+  const gtagOpt = opts.gtagOpt || {}
   gtag('js', new Date())
-  gtag('config', trackId)
+  gtag('config', trackId, gtagOpt)
 }
 
 /**
