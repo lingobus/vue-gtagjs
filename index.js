@@ -40,7 +40,6 @@ function initialize (trackId, opts) {
 function configPagePath (pathPath, trackId, opts) {
   initialize(trackId, opts)
   gtag('config', trackId, {'page_path': pathPath})
-  gtag('event', 'page_view', { 'send_to': trackId })
 }
 
 function log (url) {
