@@ -1,6 +1,6 @@
 {
   "name": "vue-gtagjs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Google gtag.js for Vue.js",
   "main": "dist/index.js",
   "scripts": {
