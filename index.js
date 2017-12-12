@@ -43,7 +43,7 @@ function configPagePath (pathPath, trackId, opts) {
 }
 
 function log (url) {
-  console.log(`set page path to: ${url}`)
+  console.log('set page path to: ' + url)
 }
 
 export default function (router, GA_TRACKING_ID, opts = {}) {
