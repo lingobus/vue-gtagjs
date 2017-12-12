@@ -7,7 +7,7 @@ function appendGtagScript (trackId, id) {
   const s = document.createElement('script')
   s.id = id
   s.async = true
-  s.src = `https://www.googletagmanager.com/gtag/js?id=${trackId}`
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + trackId
   const n = document.getElementsByTagName('head')[0]
   if (!n) n = document.body
   n.appendChild(s)
