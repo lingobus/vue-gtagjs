@@ -7,8 +7,8 @@ function appendGtagScript (trackId, id) {
   const s = document.createElement('script')
   s.id = id
   s.async = true
-  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + trackId
-  const n = document.getElementsByTagName('head')[0]
+  s.src = `https://www.googletagmanager.com/gtag/js?id=${trackId}`
+  var n = document.getElementsByTagName('head')[0]
   if (!n) n = document.body
   n.appendChild(s)
 }
@@ -43,7 +43,7 @@ function configPagePath (pathPath, trackId, opts) {
 }
 
 function log (url) {
-  console.log('set page path to: ' + url)
+  console.log(`set page path to: ${url}`)
 }
 
 export default function (router, GA_TRACKING_ID, opts = {}) {

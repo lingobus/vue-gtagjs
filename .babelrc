@@ -1,7 +1,4 @@
 {
-  "env": {
-    "test": {
-      "presets": ["es2015", "vue"]
-    }
-  }
+  "presets": ["es2015"],
+  "plugins": ["transform-runtime"]
 }
